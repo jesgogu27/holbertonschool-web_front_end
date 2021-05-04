@@ -1,0 +1,8 @@
+/* Creates H* tags, where ‘*’ is the size of the font used. */
+/* h1 must have font size equal to 1px, h2 must have font size equal to 2px */
+
+@for $num from 1 through 5 {
+    h#{$num} {
+        font-size: #{$num}px;
+    }
+}
