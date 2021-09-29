@@ -1,0 +1,12 @@
+/* Assigns margin left and right at 10px to body tags */
+/* Assigns margin left and right at 15px to div tags */
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=8-mixin_margins.css.map */

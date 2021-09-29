@@ -1,0 +1,11 @@
+/* Assigns no margin or padding in body tags */
+/* Assigns margin 10px to all of the p tags inside body tags */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body p {
+  margin: 10px;
+}
+/*# sourceMappingURL=3-nested_tag.css.map */

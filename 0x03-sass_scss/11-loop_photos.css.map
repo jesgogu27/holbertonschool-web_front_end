@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,2DAA2D;AAC3D,yDAAyD;ACDzD,eAAe;ADMX,AAAA,aAAa,CAAG;EAChB,UAAU,EAAE,8BAAgC,CAAC,SAAS;CACrD;;AAFD,AAAA,WAAW,CAAK;EAChB,UAAU,EAAE,4BAAgC,CAAC,SAAS;CACrD;;AAFD,AAAA,UAAU,CAAM;EAChB,UAAU,EAAE,2BAAgC,CAAC,SAAS;CACrD;;AAFD,AAAA,aAAa,CAAG;EAChB,UAAU,EAAE,8BAAgC,CAAC,SAAS;CACrD",
+    "sources": [
+        "11-loop_photos.scss",
+        "11-photos.scss"
+    ],
+    "names": [],
+    "file": "11-loop_photos.css"
+}

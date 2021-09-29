@@ -1,0 +1,10 @@
+/* Assigns text color #FF0000 to button tags */
+/* When the user hovers over button tags, text color should change to #00FF00 */
+button {
+  color: #ff0000;
+}
+
+button:hover {
+  color: #00ff00;
+}
+/*# sourceMappingURL=6-nested_hover.css.map */

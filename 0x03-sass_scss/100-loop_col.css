@@ -1,0 +1,21 @@
+/* Creates classes with different width: */
+/* col-1 with width equals to 100% */
+/* col-2 with width equals to 50% */
+/* col-3 with width equals to 33.3333333333% */
+/* col-4 with width equals to 25% */
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.33333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+/*# sourceMappingURL=100-loop_col.css.map */

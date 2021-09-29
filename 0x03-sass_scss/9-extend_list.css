@@ -1,0 +1,15 @@
+/* Assigns Font size 12px to all tags of class .info */
+/* Assigns Text color #00FF00 to all tags of class .success and extend style of the class .info */
+/* Assigns Text color #FF0000 to all tags of class .warning and extend style of the class .info */
+.info, .success, .warning {
+  font-size: 12px;
+}
+
+.success {
+  color: #00ff00;
+}
+
+.warning {
+  color: #ff0000;
+}
+/*# sourceMappingURL=9-extend_list.css.map */

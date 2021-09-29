@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,+CAA+C;AAC/C,gFAAgF;AAEhF,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,OAAO;CAIjB;;AALD,AAEI,MAFE,AAED,MAAM,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "6-nested_hover.scss"
+    ],
+    "names": [],
+    "file": "6-nested_hover.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,4DAA4D;AAC5D,8FAA8F;AAE9F,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,OAAO;CAIjB;;AALD,AAEI,IAFA,GAEE,IAAI,CAAC;EACH,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "5-nested_child.scss"
+    ],
+    "names": [],
+    "file": "5-nested_child.css"
+}

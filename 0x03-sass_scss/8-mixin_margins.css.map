@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,wDAAwD;AACxD,uDAAuD;AAYvD,AAAA,IAAI,CAAC;EATD,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CAUrB;;AAED,AAAA,GAAG,CAAC;EARA,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CASrB",
+    "sources": [
+        "8-mixin_margins.scss"
+    ],
+    "names": [],
+    "file": "8-mixin_margins.css"
+}

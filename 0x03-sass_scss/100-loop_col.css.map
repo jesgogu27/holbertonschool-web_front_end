@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,2CAA2C;AAC3C,qCAAqC;AACrC,oCAAoC;AACpC,+CAA+C;AAC/C,oCAAoC;AAGhC,AAAA,MAAM,CAAK;EACT,KAAK,EAAE,IAAa;CACrB;;AAFD,AAAA,MAAM,CAAK;EACT,KAAK,EAAE,GAAa;CACrB;;AAFD,AAAA,MAAM,CAAK;EACT,KAAK,EAAE,SAAa;CACrB;;AAFD,AAAA,MAAM,CAAK;EACT,KAAK,EAAE,GAAa;CACrB",
+    "sources": [
+        "100-loop_col.scss"
+    ],
+    "names": [],
+    "file": "100-loop_col.css"
+}
