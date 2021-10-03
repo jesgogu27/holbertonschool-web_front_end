@@ -1,0 +1,20 @@
+{
+    "name": "cookies",
+    "version": "1.0.0",
+    "description": "Cookies & local storage",
+    "author": "David Agudelo",
+    "keywords": [
+        "cookies",
+        "Javascript",
+        "DOM",
+        "Localstorage",
+        "Sessionstorage"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dagute/holbertonschool-web_front_end/tree/master/0x0E-Cookies_local_storage"
+    },
+    "scripts": {
+        "start:dev": "webpack-dev-server"   
+    }
+}

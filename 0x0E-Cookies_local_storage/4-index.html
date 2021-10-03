@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form-group">
+        <h2>Login to the website</h2>
+        <form action="">
+            <input type="text" id="firstname" placeholder="Firstname" />
+            <input type="text" id="email" placeholder="Email" />
+            <button id="set">Log me in</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script>
+        document
+        .getElementById("set")
+        .addEventListener("click", function (event) {
+          event.preventDefault()
+          setCookiesAndShowWelcomeMessage()
+        })
+
+      const showForm = () => {
+        document.getElementById("form-group").style.display = "block"
+      }
+
+      const hideForm = () => {
+        document.getElementById("form-group").style.display = "none"
+      }
+
+      const deleteCookiesAndShowForm = () => {
+        Cookies.remove("firstname", { path: "" })
+        Cookies.remove("email", { path: "" })
+        const welcome = document.getElementById("welcome")
+        document.querySelector("body").removeChild(welcome)
+        showForm()
+      }
+
+      const setCookiesAndShowWelcomeMessage = () => {
+        const firstname = document.getElementById("firstname").value
+        const email = document.getElementById("email").value
+        Cookies.set("firstname", firstname, { expires: 10, path: "" })
+        Cookies.set("email", email, { expires: 10, path: "" })
+        hideForm()
+        const div = document.createElement("div")
+        div.id = "welcome"
+        const header = document.createElement("h1")
+        header.innerHTML = `Welcome ${firstname}`
+        const logout = document.createElement("a")
+        logout.innerHTML = "(logout)"
+        logout.addEventListener("click", (event) => {
+          event.preventDefault()
+          deleteCookiesAndShowForm()
+        })
+        div.appendChild(header)
+        div.appendChild(logout)
+        document.querySelector("body").append(div)
+      }
+    </script>
+  </body>
+</html>
