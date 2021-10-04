@@ -1,6 +1,11 @@
 <head>
     <meta charset="utf-8" />
-    <title>Task 8</title>
+    <title>Task 9</title>.
+    <style>
+        .loading {
+          opacity: 0.3;
+        }
+    </style>
   </head>
   <body>
     <script
@@ -29,9 +34,11 @@
         $.ajax({
           dataType: "json",
           url: `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${search}&sroffset=${offset}&format=json&callback=?`,
+          beforeSend: displayLoading(true),
           success: function (res) {
             if (res.error) return console.log("Empty search!")
             $("ul:nth-of-type(1)").empty()
+            displayLoading(false)
             res.query.search.forEach(({ pageid, title, snippet }) =>
               addNewArticle(pageid, title, snippet)
             )
@@ -55,6 +62,11 @@
           const val = this.children["0"].innerText
           queryWikipedia($("input:nth-of-type(1)").val(), val)
         })
+      }
+      const displayLoading = (loading) => {
+        loading
+          ? $("ul:nth-of-type(1)").wrap("<div class='loading'></div>")
+          : $("ul:nth-of-type(1)").unwrap()
       }
       createSearchForm()
     </script>

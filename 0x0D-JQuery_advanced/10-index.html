@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Task 10</title>.
+    <style>
+        .loading {
+          opacity: 0.3;
+        }
+    </style>
+  </head>
+  <body>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+  </script>
+    <script type="application/javascript">
+        const addPostRow = (data) => {
+        const { id, title, author } = data
+        $("body").append(
+          "<p>" +
+            "<span>" +
+            `Post created with id ${id}, title: ${title}, author: ${author}`
+        )
+      }
+      const listPosts = () => {
+        $.get("http://localhost:3000/posts", (data) => {
+          data.forEach((e) => addPostRow(e))
+        }).fail(() => {
+          console.log("Server Error")
+        })
+      }
+      listPosts()
+    </script>
+  </body>
+</html>
